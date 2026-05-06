@@ -1,0 +1,16 @@
+Source: php-phpdocumentor-flyfinder
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/phpDocumentor/FlyFinder
+Vcs-Git: https://github.com/Vitexus/php-phpdocumentor-flyfinder.git
+Rules-Requires-Root: no
+
+Package: php-phpdocumentor-flyfinder
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, composer, php-league-flysystem
+Description: FlySystem-based finder for phpDocumentor
+ A FlySystem plugin that allows phpDocumentor to find files
+ by applying specification patterns.
